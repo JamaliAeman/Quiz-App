@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5354F88925A0412C0061F0FC /* Quiz_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5354F87F25A0412C0061F0FC /* Quiz_App.framework */; };
-		5354F88E25A0412C0061F0FC /* Quiz_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5354F88D25A0412C0061F0FC /* Quiz_AppTests.swift */; };
-		5354F89025A0412C0061F0FC /* Quiz_App.h in Headers */ = {isa = PBXBuildFile; fileRef = 5354F88225A0412C0061F0FC /* Quiz_App.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5354F89E25A0418D0061F0FC /* FlowTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5354F89D25A0418D0061F0FC /* FlowTest.swift */; };
+		5354F8A225A0419C0061F0FC /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5354F8A125A0419C0061F0FC /* Flow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +24,11 @@
 
 /* Begin PBXFileReference section */
 		5354F87F25A0412C0061F0FC /* Quiz_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Quiz_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5354F88225A0412C0061F0FC /* Quiz_App.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Quiz_App.h; sourceTree = "<group>"; };
 		5354F88325A0412C0061F0FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5354F88825A0412C0061F0FC /* Quiz AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quiz AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5354F88D25A0412C0061F0FC /* Quiz_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz_AppTests.swift; sourceTree = "<group>"; };
 		5354F88F25A0412C0061F0FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5354F89D25A0418D0061F0FC /* FlowTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowTest.swift; sourceTree = "<group>"; };
+		5354F8A125A0419C0061F0FC /* Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,7 @@
 		5354F88125A0412C0061F0FC /* Quiz App */ = {
 			isa = PBXGroup;
 			children = (
-				5354F88225A0412C0061F0FC /* Quiz_App.h */,
+				5354F8A125A0419C0061F0FC /* Flow.swift */,
 				5354F88325A0412C0061F0FC /* Info.plist */,
 			);
 			path = "Quiz App";
@@ -80,7 +80,7 @@
 		5354F88C25A0412C0061F0FC /* Quiz AppTests */ = {
 			isa = PBXGroup;
 			children = (
-				5354F88D25A0412C0061F0FC /* Quiz_AppTests.swift */,
+				5354F89D25A0418D0061F0FC /* FlowTest.swift */,
 				5354F88F25A0412C0061F0FC /* Info.plist */,
 			);
 			path = "Quiz AppTests";
@@ -93,7 +93,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5354F89025A0412C0061F0FC /* Quiz_App.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,9 +146,11 @@
 				TargetAttributes = {
 					5354F87E25A0412C0061F0FC = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					5354F88725A0412C0061F0FC = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 				};
 			};
@@ -194,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5354F8A225A0419C0061F0FC /* Flow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5354F88E25A0412C0061F0FC /* Quiz_AppTests.swift in Sources */,
+				5354F89E25A0418D0061F0FC /* FlowTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +342,7 @@
 		5354F89425A0412C0061F0FC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -356,6 +359,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aeman.Quiz-App";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -363,6 +367,7 @@
 		5354F89525A0412C0061F0FC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -386,6 +391,8 @@
 		5354F89725A0412C0061F0FC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Quiz AppTests/Info.plist";
@@ -396,6 +403,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aeman.Quiz-AppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -403,6 +411,8 @@
 		5354F89825A0412C0061F0FC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Quiz AppTests/Info.plist";
